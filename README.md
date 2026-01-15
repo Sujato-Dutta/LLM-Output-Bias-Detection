@@ -52,6 +52,8 @@ Each sample consists of a context sentence and multiple candidate continuations 
 - **Pooling**: Mean pooling
 - **Trainable Parameters**: 73,728 (0.32% of total)
 
+⚠️Note: The frozen MiniLM and LoRA MiniLM are trained on google colab for GPU access and then downloaded for further usage in local system. The colab notebooks for both training both models are available in the notebooks folder and can be downloaded for personal use.
+
 ### Why LoRA/PEFT?
 
 LoRA (Low-Rank Adaptation) enables efficient fine-tuning by:
