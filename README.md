@@ -1,7 +1,7 @@
 # LLM Output Bias Detection
 
 A production-grade machine learning system for detecting stereotypical bias in LLM-generated text using the StereoSet benchmark dataset and fine-tuned MiniLM model.
-
+Try it out here: https://appapppy-ztzucs5yg5c9wpc8xfx885.streamlit.app/
 ## 🎯 Problem Statement
 
 Large Language Models (LLMs) can inadvertently generate text that reinforces harmful stereotypes about various demographic groups. This project implements a bias detection system that classifies whether an LLM's response:
@@ -52,7 +52,7 @@ Each sample consists of a context sentence and multiple candidate continuations 
 - **Pooling**: Mean pooling
 - **Trainable Parameters**: 73,728 (0.32% of total)
 
-⚠️Note: The frozen MiniLM and LoRA MiniLM are trained on google colab for GPU access and then downloaded for further usage in local system. The colab notebooks for both training both models are available in the notebooks folder and can be downloaded for personal use.
+⚠️Note: The frozen MiniLM and LoRA MiniLM are trained on google colab for GPU access and then the final model weights/adapters (in case of the fine-tuned model) are downloaded for further usage in local system. The colab notebooks for training both models are available in the notebooks folder and can be downloaded for personal use.
 
 ### Why LoRA/PEFT?
 
