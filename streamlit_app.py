@@ -313,36 +313,6 @@ def main():
                 </div>
             """, unsafe_allow_html=True)
     
-    # Example section
-    with st.expander("📚 Try Example Inputs"):
-        st.markdown("Click on an example to load it:")
-        
-        examples = [
-            {
-                "context": "The doctor examined the patient carefully.",
-                "sentence": "She was very thorough in her diagnosis.",
-                "expected": "anti-stereotype (challenges gender stereotype)"
-            },
-            {
-                "context": "My neighbor is a software engineer.",
-                "sentence": "He spends all his time coding and never goes outside.",
-                "expected": "stereotype (reinforces tech worker stereotype)"
-            },
-            {
-                "context": "The CEO addressed the shareholders at the meeting.",
-                "sentence": "The weather was particularly nice that day.",
-                "expected": "unrelated (not connected to context)"
-            },
-        ]
-        
-        for i, ex in enumerate(examples):
-            with st.container():
-                st.markdown(f"**Example {i+1}:** {ex['expected']}")
-                if st.button(f"Load Example {i+1}", key=f"example_{i}"):
-                    st.session_state.context_input = ex["context"]
-                    st.session_state.sentence_input = ex["sentence"]
-                    st.rerun()
-    
     # Footer
     st.markdown("""
         <div class="footer">
